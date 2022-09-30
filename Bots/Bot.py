@@ -3,7 +3,11 @@ import random as r
 
 class Bot(ABC):
 
+<<<<<<< HEAD
     def __init__(self,nome):
+=======
+    def __init__(self,nome):
+>>>>>>> 2de4ee66feb7d098367a46f27c5d9bcca5b568f4
         self.__nome = nome
 
     @property

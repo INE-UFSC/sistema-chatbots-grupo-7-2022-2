@@ -25,7 +25,7 @@ class SistemaChatBot:
 
     def mostra_menu(self):
         for i, bot in enumerate(self.__lista_bots):
-            print(f'{i} - Bot:{bot.nome}')
+            print(f'{i} - Bot:{bot.apresentacao()}')
 
     def escolhe_bot(self):
         # faz a entrada de dados do usuário e atribui o objeto ao atributo __bot
@@ -68,12 +68,10 @@ class SistemaChatBot:
         self.boas_vindas()
         while True:
             self.mostra_menu()
-
             if not self.escolhe_bot():
                 return
             self.__get_bot().boas_vindas()
             continuar_bot = True
             while continuar_bot:
                 self.mostra_comandos_bot()
-                continuar_bot = self.mostra_comandos_bot()
-                print(self.le_envia_comando())
+                continuar_bot = self.le_envia_comando()

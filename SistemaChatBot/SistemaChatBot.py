@@ -48,6 +48,7 @@ class SistemaChatBot:
 
     def mostra_comandos_bot(self):
         # mostra os comandos disponíveis no bot escolhido
+        print()
         print(self.__get_bot().mostra_comandos())
 
     def le_envia_comando(self):

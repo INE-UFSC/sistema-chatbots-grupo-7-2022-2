@@ -13,7 +13,7 @@ class BotZangado(Bot):
                             f"--> {self.nome} diz: Você disse 'Adeus'\n--> Eu te respondo: 'Já vai tarde!'"}
 
     def apresentacao(self):
-        return f"Ódio no coração, raiva de mim e da vida: Eu sou {self.__nome}"
+        return f"Ódio no coração, raiva de mim e da vida: Eu sou {self.nome}"
  
     def mostra_comandos(self):
         return "1 - Bom dia\n2 - Qual o seu nome?\n3 - Quero um conselho\n4 - Adeus\n\n"

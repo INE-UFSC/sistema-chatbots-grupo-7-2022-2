@@ -13,7 +13,7 @@ class BotTriste(Bot):
                            f"--> {self.nome} diz: Você disse 'Adeus'\n--> Eu te respondo: 'Já estou acostumado... Adeus... :'('"}
 
     def apresentacao(self):
-        return f"Psicologicamente triste, fisicamente cansado e emocionalmente confuso: Eu sou {self.__nome}"
+        return f"Psicologicamente triste, fisicamente cansado e emocionalmente confuso: Eu sou {self.nome}"
  
     def mostra_comandos(self):
         return "1 - Bom dia\n2 - Qual o seu nome?\n3 - Quero um conselho\n4 - Adeus\n\n"

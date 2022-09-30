@@ -25,13 +25,13 @@ class SistemaChatBot:
 
     def mostra_menu(self):
         for i, bot in enumerate(self.__lista_bots):
-            print(f'{i} - Bot:{bot.apresentacao()}')
+            print(f'{i} - Bot: {bot.apresentacao()}')
 
     def escolhe_bot(self):
         # faz a entrada de dados do usuário e atribui o objeto ao atributo __bot
         while True:
             try:
-                bot = input("Escolha um bot ou -1 para sair: ")
+                bot = input("\nEscolha um bot ou -1 para sair: ")
                 index = int(bot)
                 if index == -1:
                     return False

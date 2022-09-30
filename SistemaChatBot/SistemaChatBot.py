@@ -22,6 +22,7 @@ class SistemaChatBot:
     def boas_vindas(self):
         # mostra mensagem de boas vindas do sistema
         print("Bem-vindo ao Sistema de chatbots da empresa "+self.__empresa)
+        print()
 
     def mostra_menu(self):
         for i, bot in enumerate(self.__lista_bots):
@@ -70,7 +71,7 @@ class SistemaChatBot:
             self.mostra_menu()
             if not self.escolhe_bot():
                 return
-            self.__get_bot().boas_vindas()
+            print(self.__get_bot().boas_vindas())
             continuar_bot = True
             while continuar_bot:
                 self.mostra_comandos_bot()

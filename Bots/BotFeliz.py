@@ -2,7 +2,7 @@ from Bots.Bot import Bot
 
 class BotFeliz(Bot):
     def __init__(self, nome):
-        super().__init(nome)
+        super().__init__(nome)
         self.__comandos = {'1': 
                            f"--> {self.nome} diz: Você disse 'Bom dia'\n--> Eu te respondo: 'Bom dia? Dia MA-RA-VI-LHO-SO!'",
                            '2':
